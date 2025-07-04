@@ -18,6 +18,7 @@ public class UrlMapping {
     private LocalDateTime createdDate;
 
 
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
