@@ -1,12 +1,57 @@
-# React + Vite
+# Linkraze - URL Shortener
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-stack URL shortening service built with React and Node.js.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+linkraze/
+├── frontend/          # React.js frontend application
+└── backend/           # Node.js backend API (coming soon)
+```
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔗 URL shortening with custom short codes
+- 📊 Analytics and click tracking
+- 👤 User authentication and dashboard
+- 📱 Responsive design
+- 🎨 Modern UI with Tailwind CSS
+
+## Frontend
+
+The frontend is built with:
+- React 18
+- Vite
+- Tailwind CSS
+- React Router
+- Axios for API calls
+
+### Getting Started
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Backend
+
+Backend implementation coming soon...
+
+## Live Demo
+
+- Frontend: https://cheery-chaja-21f9ee.netlify.app
+- Backend API: https://zaplink-sb.onrender.com
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+MIT License
