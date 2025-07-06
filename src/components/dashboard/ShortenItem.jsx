@@ -20,6 +20,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
     const [selectedUrl, setSelectedUrl] = useState("");
     const [analyticsData, setAnalyticsData] = useState([]);
 
+    // Domain değişikliği için kullanışlı - ileride aktifleştirilebilir
     const subDomain = import.meta.env.VITE_REACT_FRONT_END_URL.replace(
         /^https?:\/\//,
         ""
@@ -77,7 +78,8 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
               target="_blank"
               rel="noopener noreferrer"
               className='text-[17px]  font-montserrat font-[600] text-linkColor'>
-                  {subDomain + "/s/" + `${shortUrl}`}
+                  {import.meta.env.VITE_REACT_FRONT_END_URL.replace(/^https?:\/\//, "") + "/s/" + `${shortUrl}`}
+                  {/* İleride domain değişikliği için: {subDomain + "/s/" + `${shortUrl}`} */}
             </a>
             <FaExternalLinkAlt className="text-linkColor" />
             </div>
